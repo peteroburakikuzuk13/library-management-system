@@ -19,7 +19,7 @@ A web-based Library Management System developed using PHP, MySQL, HTML, CSS, Jav
 - Database: MySQL (`library_db`)
 - Backend: PHP (PDO)
 - Frontend: HTML, CSS, JavaScript and Bootstrap 5
-- Development Environment:** XAMPP and Visual Studio Code
+- Development Environment: XAMPP and Visual Studio Code
 - Version Control:** Git and GitHub
 
 2. Main Features
