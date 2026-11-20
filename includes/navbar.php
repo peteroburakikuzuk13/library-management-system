@@ -8,7 +8,7 @@ $nav_links = [
     'dashboard'  => ['dashboard',  'dashboard/index.php'],
     'books'      => ['books',      'books/index.php'],
     'members'    => ['members',    'members/index.php'],
-    'loans'      => ['Loans',      'loans/index.php'],
+    'loans'      => ['loans',      'loans/index.php'],
     'authors'    => ['Authors',    'authors/index.php'],
     'categories' => ['Categories', 'categories/index.php'],
 ];
