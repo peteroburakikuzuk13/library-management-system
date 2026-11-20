@@ -6,7 +6,7 @@
 $active_nav = $active_nav ?? '';
 $nav_links = [
     'dashboard'  => ['Dashboard',  'dashboard/index.php'],
-    'books'      => ['books',      'books/index.php'],
+    'books'      => ['Books',      'books/index.php'],
     'members'    => ['members',    'members/index.php'],
     'loans'      => ['loans',      'loans/index.php'],
     'authors'    => ['authors',    'authors/index.php'],
