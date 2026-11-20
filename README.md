@@ -30,13 +30,13 @@ The system provides the following functionalities:
 - Dashboard: Displays important library statistics and activities.
 - Book Management: Add, view, search, edit and delete books.
 - **Member Management: Register, view, update and manage library members.
-- Loan Management:** Issue books, track borrowed books and process returns.
-- Author Management:** Add and view book authors.
-- Category Management:** Create and view book categories.
-- Overdue Tracking:** Identify overdue books and calculate applicable fines.
-- Security:** Password hashing, prepared SQL statements, input validation and session protection.
+- Loan Management: Issue books, track borrowed books and process returns.
+- Author Management: Add and view book authors.
+- Category Management: Create and view book categories.
+- Overdue Tracking: Identify overdue books and calculate applicable fines.
+- Security: Password hashing, prepared SQL statements, input validation and session protection.
 
-## 3. Technologies Used
+3. Technologies Used
 
 | Technology | Purpose |
 |---|---|
