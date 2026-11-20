@@ -51,4 +51,21 @@ The system provides the following functionalities:
 | Git/GitHub | Version control and project hosting |
 
 ## 4. Project Folder Structure
+## 5. Database Structure
+
+The
+## Library Statistics and Reports
+
+The Library Management System is intended to provide a statistics and reports section where the librarian can monitor library activities and access important information.
+
+### Statistics to be displayed
+
+- **Total Books:** Shows the total number of books registered in the library.
+- **Available Books:** Shows the number of books available for borrowing.
+- **Borrowed Books:** Shows the number of books currently borrowed by members.
+- **Overdue Books:** Shows books that have passed their return dates.
+- **Total Members:** Shows the total number of registered library members.
+- **Active Members:** Shows members who are allowed to borrow books.
+- **Suspended Members:** Shows members who are temporarily not allowed to borrow books.
+- **Returned Books:** Shows the number of books that have been returned.
 
