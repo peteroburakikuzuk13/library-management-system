@@ -29,7 +29,7 @@ The system provides the following functionalities:
 - User Authentication: Secure login and logout functionality.
 - Dashboard: Displays important library statistics and activities.
 - Book Management: Add, view, search, edit and delete books.
-- **Member Management: Register, view, update and manage library members.
+- Member Management: Register, view, update and manage library members.
 - Loan Management: Issue books, track borrowed books and process returns.
 - Author Management: Add and view book authors.
 - Category Management: Create and view book categories.
@@ -50,15 +50,15 @@ The system provides the following functionalities:
 | XAMPP | Local development server |
 | Git/GitHub | Version control and project hosting |
 
-## 4. Project Folder Structure
-## 5. Database Structure
+4. Project Folder Structure
+5. Database Structure
 
 The
-## Library Statistics and Reports
+Library Statistics and Reports
 
 The Library Management System is intended to provide a statistics and reports section where the librarian can monitor library activities and access important information.
 
-### Statistics to be displayed
+Statistics to be displayed
 
 - **Total Books:** Shows the total number of books registered in the library.
 - **Available Books:** Shows the number of books available for borrowing.
