@@ -10,7 +10,7 @@ $nav_links = [
     'members'    => ['Members',    'members/index.php'],
     'loans'      => ['Loans',      'loans/index.php'],
     'authors'    => ['Authors',    'authors/index.php'],
-    'categories' => ['categories', 'categories/index.php'],
+    'categories' => ['categories', 'Categories/index.php'],
 ];
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark app-nav">
