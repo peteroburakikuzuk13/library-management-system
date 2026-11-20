@@ -81,7 +81,7 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
     <div class="stat">
         <div class="stat-value"><?= (int) $loans['out_now'] ?></div>
-        <div class="stat-label">Books out on loan</div>
+        <div class="stat-label">Books out on Loan</div>
     </div>
     <div class="stat<?= (int) $loans['overdue'] > 0 ? ' is-alert' : '' ?>">
         <div class="stat-value"><?= (int) $loans['overdue'] ?></div>
