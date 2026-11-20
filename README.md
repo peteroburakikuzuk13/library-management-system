@@ -12,13 +12,13 @@ A web-based Library Management System developed using PHP, MySQL, HTML, CSS, Jav
 - Development Environment:** XAMPP and Visual Studio Code
 - Version Control:** Git and GitHub
 
-## 2. Main Features
+2. Main Features
 
 The system provides the following functionalities:
 
-- **User Authentication:** Secure login and logout functionality.
-- **Dashboard:** Displays important library statistics and activities.
-- **Book Management:** Add, view, search, edit and delete books.
+- User Authentication:** Secure login and logout functionality.
+- Dashboard:** Displays important library statistics and activities.
+- Book Management:** Add, view, search, edit and delete books.
 - **Member Management:** Register, view, update and manage library members.
 - **Loan Management:** Issue books, track borrowed books and process returns.
 - **Author Management:** Add and view book authors.
