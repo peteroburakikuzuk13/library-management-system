@@ -5,12 +5,12 @@ A web-based Library Management System developed using PHP, MySQL, HTML, CSS, Jav
 1. Project Information
 
 - Project Name:** Library Management System
-- **Course:** Database II – CAT 2
-- **Database:** MySQL (`library_db`)
-- **Backend:** PHP (PDO)
-- **Frontend:** HTML, CSS, JavaScript and Bootstrap 5
-- **Development Environment:** XAMPP and Visual Studio Code
-- **Version Control:** Git and GitHub
+- Course:** Database II – CAT 2
+- Database:** MySQL (`library_db`)
+- Backend:** PHP (PDO)
+- Frontend:** HTML, CSS, JavaScript and Bootstrap 5
+- Development Environment:** XAMPP and Visual Studio Code
+- Version Control:** Git and GitHub
 
 ## 2. Main Features
 
