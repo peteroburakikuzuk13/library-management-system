@@ -1,6 +1,16 @@
   Library Management System
 
 A web-based Library Management System developed using PHP, MySQL, HTML, CSS, JavaScript and Bootstrap 5. The system helps librarians manage books, members, authors, categories and book loans efficiently.
+## 2. Project Objectives
+
+- To develop a system for managing library books.
+- To keep records of authors and book categories.
+- To register and manage library members.
+- To record book borrowing and returning activities.
+- To monitor overdue books.
+- To provide secure login for librarians.
+- To make library information easier to access and manage.
+
 
 1. Project Information
 
