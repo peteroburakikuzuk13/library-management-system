@@ -9,7 +9,7 @@ require_once __DIR__ . '/../config/database.php';
 
 $q      = get_str('q');
 $status = get_str('status');
-if (!in_array($status, ['', 'active', 'overdue', 'returned'], true)) {
+if (!in_array($status, ['', 'Active', 'overdue', 'returned'], true)) {
     $status = '';
 }
 $today = today();
