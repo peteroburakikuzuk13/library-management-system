@@ -1,0 +1,16 @@
+# Environment variables and private settings
+.env
+.env.*
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
