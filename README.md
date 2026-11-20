@@ -2,7 +2,7 @@
 
 A web-based Library Management System developed using PHP, MySQL, HTML, CSS, JavaScript and Bootstrap 5. The system helps librarians manage books, members, authors, categories and book loans efficiently.
 
-## 1. Project Information
+1. Project Information
 
 - **Project Name:** Library Management System
 - **Course:** Database II – CAT 2
