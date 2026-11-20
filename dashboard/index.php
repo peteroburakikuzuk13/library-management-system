@@ -69,7 +69,7 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
     <a class="btn btn-primary" href="<?= e(base_url('loans/issue.php')) ?>">Issue a book</a>
 </div>
-
+ 
 <section class="panel stat-strip mb-4" aria-label="Library figures">
     <div class="stat">
         <div class="stat-value"><?= (int) $books['titles'] ?></div>
