@@ -9,7 +9,7 @@ $nav_links = [
     'books'      => ['books',      'books/index.php'],
     'members'    => ['members',    'members/index.php'],
     'loans'      => ['loans',      'loans/index.php'],
-    'authors'    => ['Authors',    'authors/index.php'],
+    'authors'    => ['authors',    'authors/index.php'],
     'categories' => ['Categories', 'categories/index.php'],
 ];
 ?>
