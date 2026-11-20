@@ -60,12 +60,12 @@ The Library Management System is intended to provide a statistics and reports se
 
 Statistics to be displayed
 
-- **Total Books:** Shows the total number of books registered in the library.
-- **Available Books:** Shows the number of books available for borrowing.
-- **Borrowed Books:** Shows the number of books currently borrowed by members.
-- **Overdue Books:** Shows books that have passed their return dates.
-- **Total Members:** Shows the total number of registered library members.
-- **Active Members:** Shows members who are allowed to borrow books.
-- **Suspended Members:** Shows members who are temporarily not allowed to borrow books.
-- **Returned Books:** Shows the number of books that have been returned.
+- Total Books: Shows the total number of books registered in the library.
+- Available Books: Shows the number of books available for borrowing.
+- Borrowed Books: Shows the number of books currently borrowed by members.
+- Overdue Books: Shows books that have passed their return dates.
+- Total Members: Shows the total number of registered library members.
+- Active Members: Shows members who are allowed to borrow books.
+- Suspended Members: Shows members who are temporarily not allowed to borrow books.
+- Returned Books: Shows the number of books that have been returned.
 
