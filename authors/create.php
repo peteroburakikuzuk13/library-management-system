@@ -15,10 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (str_length($data['name']) < 2 || str_length($data['name']) > 120) {
         $errors['name'] = 'Author name must be between 2 and 120 characters.';
-    }
-    if (str_length($data['country']) > 80) {
-        $errors['country'] = 'Country must be 80 characters or fewer.';
-    }
 
     if (!$errors) {
         $country = $data['country'] === '' ? 'Unknown' : $data['country'];
