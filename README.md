@@ -13,9 +13,7 @@ This is a web-based Library Management System developed using PHP, MySQL, HTML, 
 - To calculate and track late return fines or penalties automatically.
 - To generate summary reports on book availability, loan history, and popular titles.
 - To enable fast search and filtering of books by title, author, category, or availability status.
-
-
-
+- To promote integrity and accuracy for books management 
 
 1. Project Information
 
