@@ -118,4 +118,11 @@ STATISTICS TO BE DISPLAYED.
 - Active Members: Shows members who are allowed to borrow books.
 - Suspended Members: Shows members who are temporarily not allowed to borrow books.
 - Returned Books: Shows the number of books that have been returned.
+### Purpose of the Statistics Report
+
+The statistics report will help the librarian monitor book availability, track borrowing activities, identify overdue books and understand membership records.
+
+The report will also support better decision-making and improve the management of library resources.
+
+*Note: The statistics and reports section is a planned system enhancement and will be implemented in the application.*
 
