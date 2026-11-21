@@ -1,9 +1,4 @@
 <?php
-/**
- * books/index.php
- * READ: list of books with search, category and availability filters,
- * pagination and CSV export.
- */
 require_once __DIR__ . '/../includes/auth_check.php';
 require_once __DIR__ . '/../config/database.php';
 
