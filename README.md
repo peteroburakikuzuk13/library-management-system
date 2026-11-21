@@ -110,8 +110,7 @@ The
 Library Statistics and Reports
 
 The Library Management System is intended to provide a statistics and reports section where the librarian can monitor library activities and access important information.
-
-Statistics to be displayed
+STATISTICS TO BE DISPLAYED.
 
 - Total Books: Shows the total number of books registered in the library.
 - Available Books: Shows the number of books available for borrowing.
