@@ -96,66 +96,6 @@ require_once __DIR__ . '/../includes/header.php';
 
 <div class="panel panel-pad">
     <?= error_summary($errors) ?>
-    <form method="post" action="">
-        <?= csrf_field() ?>
-        <input type="hidden" name="book_id" value="<?= (int) $id ?>">
-        <div class="row g-3">
-            <div class="col-md-4">
-                <label for="isbn" class="form-label">ISBN</label>
-                <input type="text" class="form-control<?= invalid_class($errors, 'isbn') ?>" id="isbn" name="isbn"
-                       value="<?= e($data['isbn']) ?>" maxlength="17" required>
-                <?= field_error($errors, 'isbn') ?>
-            </div>
-            <div class="col-md-8">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control<?= invalid_class($errors, 'title') ?>" id="title" name="title"
-                       value="<?= e($data['title']) ?>" maxlength="200" required>
-                <?= field_error($errors, 'title') ?>
-            </div>
-            <div class="col-md-6">
-                <label for="author_id" class="form-label">Author</label>
-                <select class="form-select<?= invalid_class($errors, 'author_id') ?>" id="author_id" name="author_id" required>
-                    <option value="">Choose an author</option>
-                    <?php foreach ($authors as $a): ?>
-                        <option value="<?= (int) $a['author_id'] ?>"<?= (int) $data['author_id'] === (int) $a['author_id'] ? ' selected' : '' ?>><?= e($a['name']) ?></option>
-                    <?php endforeach; ?>
-                </select>
-                <?= field_error($errors, 'author_id') ?>
-            </div>
-            <div class="col-md-6">
-                <label for="category_id" class="form-label">Category</label>
-                <select class="form-select<?= invalid_class($errors, 'category_id') ?>" id="category_id" name="category_id" required>
-                    <option value="">Choose a category</option>
-                    <?php foreach ($categories as $c): ?>
-                        <option value="<?= (int) $c['category_id'] ?>"<?= (int) $data['category_id'] === (int) $c['category_id'] ? ' selected' : '' ?>><?= e($c['name']) ?></option>
-                    <?php endforeach; ?>
-                </select>
-                <?= field_error($errors, 'category_id') ?>
-            </div>
-            <div class="col-md-6">
-                <label for="publisher" class="form-label">Publisher</label>
-                <input type="text" class="form-control<?= invalid_class($errors, 'publisher') ?>" id="publisher" name="publisher"
-                       value="<?= e($data['publisher']) ?>" maxlength="120" required>
-                <?= field_error($errors, 'publisher') ?>
-            </div>
-            <div class="col-6 col-md-3">
-                <label for="year_published" class="form-label">Year published</label>
-                <input type="number" class="form-control<?= invalid_class($errors, 'year_published') ?>" id="year_published" name="year_published"
-                       value="<?= e($data['year_published']) ?>" min="1000" max="<?= (int) date('Y') + 1 ?>" required>
-                <?= field_error($errors, 'year_published') ?>
-            </div>
-            <div class="col-6 col-md-3">
-                <label for="total_copies" class="form-label">Total copies</label>
-                <input type="number" class="form-control<?= invalid_class($errors, 'total_copies') ?>" id="total_copies" name="total_copies"
-                       value="<?= e($data['total_copies']) ?>" min="1" max="500" required>
-                <?= field_error($errors, 'total_copies') ?>
-                <div class="form-text"><?= (int) $onLoan ?> on loan now.</div>
-            </div>
-        </div>
-        <div class="mt-4 d-flex gap-2">
-            <button type="submit" class="btn btn-primary">Save changes</button>
-            <a class="btn btn-outline-secondary" href="<?= e(base_url('books/index.php')) ?>">Cancel</a>
-        </div>
-    </form>
+
 </div>
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>
