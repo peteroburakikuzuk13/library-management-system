@@ -152,7 +152,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-6">
                 <label class="form-label" for="due_date_view">Due date</label>
                 <input type="text" class="form-control" id="due_date_view" value="<?= e(format_date(add_days(today(), LOAN_DAYS))) ?>" disabled>
-                <div class="form-text">Set automatically, <?= (int) LOAN_DAYS ?> days after the issue date.</div>
+                <div class="form-text">Set automatically, <?= (int) LOAN_DAYS ?> Days after the issue date.</div>
             </div>
         </div>
         <div class="mt-4 d-flex gap-2">
