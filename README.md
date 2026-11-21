@@ -43,6 +43,51 @@ The system provides the following functionalities:
 ## 4. System Features
 
 The Library Management System includes the following features:
+### User Authentication
+- Librarian login.
+- Secure password verification.
+- Logout functionality.
+- Session-based access protection.
+
+### Book Management
+- Add new books.
+- View registered books.
+- Edit book information.
+- Delete book records.
+
+### Author Management
+- Add authors.
+- View author records.
+- Edit author details.
+- Delete authors.
+
+### Category Management
+- Add book categories.
+- View categories.
+- Edit category information.
+- Delete categories.
+
+### Member Management
+- Register new members.
+- View member records.
+- Edit member information.
+- Delete member records.
+- Manage active and suspended members.
+
+### Loan Management
+- Issue books to members.
+- Record book returns.
+- Calculate book return dates.
+- Monitor overdue books.
+- Update available book copies.
+
+### Dashboard
+The dashboard provides an overview of library activities, including:
+- Total books.
+- Total members.
+- Total loans.
+- Borrowed books.
+- Overdue books.
 
 3. Technologies Used
 
