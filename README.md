@@ -124,5 +124,5 @@ The statistics report will help the librarian monitor book availability, track b
 
 The report will also support better decision-making and improve the management of library resources.
 
-*Note: The statistics and reports section is a planned system enhancement and will be implemented in the application.*
+*Note: The statistics and reports section is a planned system enhancement and will be implemented in the application. but for our case it was optional.
 
