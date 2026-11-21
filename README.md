@@ -38,28 +38,28 @@ The library management system provides the following functionalities:
 - Category Management: Create and view book categories.
 - Overdue Tracking: Identify overdue books and calculate applicable fines.
 - Security: Password hashing, prepared SQL statements, input validation and session protection.
-## 4. System Features
+  4. System Features
 
 The Library Management System includes the following features:
-### User Authentication
+ User Authentication
 - Librarian login.
 - Secure password verification.
 - Logout functionality.
 - Session-based access protection.
 
-### Book Management
+ Book Management
 - Add new books.
 - View registered books.
 - Edit book information.
 - Delete book records.
 
-### Author Management
+ Author Management
 - Add authors.
 - View author records.
 - Edit author details.
 - Delete authors.
 
-### Category Management
+ Category Management
 - Add book categories.
 - View categories.
 - Edit category information.
