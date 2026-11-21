@@ -65,21 +65,21 @@ The Library Management System includes the following features:
 - Edit category information.
 - Delete categories.
 
-### Member Management
+ Member Management
 - Register new members.
 - View member records.
 - Edit member information.
 - Delete member records.
 - Manage active and suspended members.
 
-### Loan Management
+ Loan Management
 - Issue books to members.
 - Record book returns.
 - Calculate book return dates.
 - Monitor overdue books.
 - Update available book copies.
 
-### Dashboard
+ Dashboard
 The dashboard provides an overview of library activities, including:
 - Total books.
 - Total members.
