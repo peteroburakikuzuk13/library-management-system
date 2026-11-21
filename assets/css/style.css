@@ -1,1 +1,170 @@
+/* assets/css/style.css
+   Sits on top of Bootstrap. Design tokens first, then components.
+   Idea: a circulation desk. Quiet ink-and-paper palette, serif headings, and a
+   coloured "spine" at the left of each row that carries meaning
+   (category on the books list, status on the loans list). */
+
+:root {
+    --ink:        #17233a;   /* navigation bar, headings */
+    --paper:      #f2f4f7;   /* page background */
+    --surface:    #ffffff;   /* panels and tables */
+    --rule:       #dde2ea;   /* hairlines */
+    --muted:      #5d6677;   /* secondary text */
+    --catalogue:  #1f5f8b;   /* primary action */
+    --catalogue-dark: #164766;
+    --overdue:    #b3261e;
+    --brass:      #946b12;   /* due today */
+    --shelf:      #2f6f4f;   /* returned, success */
+
+    --bs-primary: var(--catalogue);
+    --bs-primary-rgb: 31, 95, 139;
+    --bs-link-color: var(--catalogue);
+    --bs-link-hover-color: var(--catalogue-dark);
+    --bs-body-bg: var(--paper);
+    --bs-body-color: #1d2433;
+    --bs-body-font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --bs-border-color: var(--rule);
+}
+
+body { background: var(--paper); min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { flex: 1 0 auto; padding-top: 1.75rem; padding-bottom: 2.5rem; }
+
+h1, h2, h3, .navbar-brand, .stat-value, .login-title {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+/* ---------- navigation ---------- */
+.app-nav { background: var(--ink); border-bottom: 3px solid var(--catalogue); }
+.app-nav .navbar-brand { font-size: 1.3rem; font-style: italic; letter-spacing: .01em; }
+.app-nav .nav-link { color: rgba(255,255,255,.72); padding: .6rem .85rem; }
+.app-nav .nav-link:hover { color: #fff; }
+.app-nav .nav-link.active { color: #fff; box-shadow: inset 0 -3px 0 #fff; }
+@media (max-width: 991.98px) {
+    .app-nav .nav-link.active { box-shadow: none; background: rgba(255,255,255,.1); border-radius: .35rem; }
+}
+
+/* ---------- page header ---------- */
+.page-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: .75rem 1rem; margin-bottom: 1.25rem; }
+.page-head h1 { font-size: 1.9rem; margin: 0; color: var(--ink); font-weight: 700; }
+.page-head p { margin: .15rem 0 0; color: var(--muted); }
+
+/* ---------- panels ---------- */
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: .5rem; }
+.panel-pad { padding: 1.25rem; }
+.panel-title { font-size: 1.15rem; color: var(--ink); margin: 0; }
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding: .9rem 1.25rem; border-bottom: 1px solid var(--rule); }
+
+/* ---------- buttons ---------- */
+.btn { border-radius: .4rem; font-weight: 500; }
+.btn-danger { --bs-btn-bg: var(--overdue); --bs-btn-border-color: var(--overdue);
+    --bs-btn-hover-bg: #8f1e18; --bs-btn-hover-border-color: #8f1e18;
+    --bs-btn-active-bg: #8f1e18; --bs-btn-active-border-color: #8f1e18; }
+.btn-outline-danger { --bs-btn-color: var(--overdue); --bs-btn-border-color: var(--overdue);
+    --bs-btn-hover-bg: var(--overdue); --bs-btn-hover-border-color: var(--overdue); --bs-btn-active-bg: #8f1e18; --bs-btn-active-border-color: #8f1e18; }
+.btn-primary { --bs-btn-bg: var(--catalogue); --bs-btn-border-color: var(--catalogue);
+    --bs-btn-hover-bg: var(--catalogue-dark); --bs-btn-hover-border-color: var(--catalogue-dark);
+    --bs-btn-active-bg: var(--catalogue-dark); --bs-btn-active-border-color: var(--catalogue-dark);
+    --bs-btn-disabled-bg: var(--catalogue); --bs-btn-disabled-border-color: var(--catalogue); }
+.btn-outline-primary { --bs-btn-color: var(--catalogue); --bs-btn-border-color: var(--catalogue);
+    --bs-btn-hover-bg: var(--catalogue); --bs-btn-hover-border-color: var(--catalogue);
+    --bs-btn-active-bg: var(--catalogue-dark); --bs-btn-active-border-color: var(--catalogue-dark); }
+:focus-visible { outline: 3px solid rgba(31, 95, 139, .45); outline-offset: 2px; }
+
+/* ---------- forms ---------- */
+.form-label { font-weight: 600; color: var(--ink); margin-bottom: .25rem; }
+.form-text { color: var(--muted); }
+.form-control, .form-select { border-color: #c5ccd8; }
+.form-control:focus, .form-select:focus { border-color: var(--catalogue); box-shadow: 0 0 0 .2rem rgba(31, 95, 139, .18); }
+.filter-bar { padding: 1rem 1.25rem; border-bottom: 1px solid var(--rule); background: #fafbfc; border-radius: .5rem .5rem 0 0; }
+
+/* ---------- tables ---------- */
+.table-wrap { overflow-x: auto; }
+.data-table { margin: 0; --bs-table-bg: transparent; }
+.data-table thead th { font-size: .82rem; font-weight: 600; color: var(--muted); border-bottom: 1px solid var(--rule); background: #fafbfc; white-space: nowrap; padding: .7rem .85rem; }
+.data-table td { padding: .75rem .85rem; vertical-align: middle; border-color: var(--rule); }
+.data-table tbody tr:last-child td { border-bottom: 0; }
+.data-table tbody tr:hover td { background: #f8fafc; }
+.data-table .title-cell { font-weight: 600; color: var(--ink); }
+.data-table .sub { display: block; font-size: .82rem; color: var(--muted); font-weight: 400; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* the coloured spine at the left edge of a row */
+.data-table tr.spine > td:first-child { border-left: 6px solid var(--spine, var(--rule)); }
+
+/* ---------- status badges ---------- */
+.badge { font-weight: 600; font-size: .78rem; padding: .35em .6em; border-radius: .35rem; }
+.badge-active   { background: #e3eef6; color: var(--catalogue-dark); }
+.badge-overdue  { background: #fbe5e3; color: var(--overdue); }
+.badge-due      { background: #f7edd3; color: var(--brass); }
+.badge-returned { background: #e6f1ea; color: var(--shelf); }
+.badge-suspended { background: #fbe5e3; color: var(--overdue); }
+.badge-member   { background: #e6f1ea; color: var(--shelf); }
+.badge-stock    { background: #e6f1ea; color: var(--shelf); }
+.badge-stock-low { background: #f7edd3; color: var(--brass); }
+.badge-stock-out { background: #fbe5e3; color: var(--overdue); }
+
+/* ---------- dashboard ---------- */
+.stat-strip { display: grid; grid-template-columns: repeat(5, 1fr); }
+.stat { padding: 1.1rem 1.25rem; border-right: 1px solid var(--rule); }
+.stat:last-child { border-right: 0; }
+.stat-value { font-size: 2rem; line-height: 1.1; font-weight: 700; color: var(--ink); }
+.stat-value small { font-size: 1rem; color: var(--muted); font-weight: 400; }
+.stat-label { color: var(--muted); font-size: .9rem; }
+.stat.is-alert .stat-value { color: var(--overdue); }
+@media (max-width: 991.98px) {
+    .stat-strip { grid-template-columns: repeat(2, 1fr); }
+    .stat { border-bottom: 1px solid var(--rule); }
+    .stat:nth-child(2n) { border-right: 0; }
+    .stat:last-child { grid-column: 1 / -1; border-bottom: 0; }
+}
+
+.shelf-row { display: grid; grid-template-columns: minmax(7rem, 11rem) 1fr 2rem; align-items: center; gap: .75rem; padding: .45rem 0; }
+.shelf-bar { height: .85rem; background: #eceff4; border-radius: .2rem; overflow: hidden; }
+.shelf-bar > span { display: block; height: 100%; background: var(--spine, var(--catalogue)); border-radius: .2rem; }
+
+.empty-state { padding: 2.25rem 1rem; text-align: center; color: var(--muted); }
+.empty-state strong { display: block; color: var(--ink); font-size: 1.05rem; margin-bottom: .25rem; }
+
+/* ---------- pagination ---------- */
+.pagination { --bs-pagination-color: var(--catalogue); --bs-pagination-active-bg: var(--catalogue); --bs-pagination-active-border-color: var(--catalogue); }
+.list-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; padding: .85rem 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+
+/* ---------- login ---------- */
+.login-wrap { max-width: 26rem; margin: 6vh auto 0; }
+.login-card { border-top: 4px solid var(--catalogue); }
+.login-title { font-size: 1.7rem; color: var(--ink); margin-bottom: .25rem; }
+
+/* ---------- footer ---------- */
+.app-footer { flex-shrink: 0; padding: 1rem 0; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--rule); background: var(--surface); }
+
+/* ---------- tables become stacked cards on phones ---------- */
+@media (max-width: 575.98px) {
+    .table-wrap { overflow-x: visible; }
+    .table-stack thead { display: none; }
+    .table-stack, .table-stack tbody, .table-stack tr { display: block; width: 100%; }
+    .table-stack tr { padding: .8rem 1rem .8rem .9rem; border-bottom: 1px solid var(--rule); }
+    .table-stack tr:last-child { border-bottom: 0; }
+    .table-stack tr.spine { border-left: 6px solid var(--spine, transparent); }
+    .data-table tr.spine > td:first-child { border-left: 0; }
+    .table-stack td { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+                      border: 0; padding: .2rem 0; text-align: right; width: 100%; }
+    .table-stack td[data-label]::before { content: attr(data-label); color: var(--muted); font-size: .85rem; text-align: left; flex-shrink: 0; }
+    .table-stack td.title-cell { display: block; text-align: left; font-size: 1.05rem; padding-bottom: .35rem; }
+    .table-stack td .sub { text-align: inherit; }
+    .table-stack td.show-stacked { display: flex !important; }
+    .table-stack td.actions { justify-content: flex-start; flex-wrap: wrap; gap: .4rem; padding-top: .55rem; }
+    .data-table tbody tr:hover td { background: transparent; }
+}
+
+/* ---------- small screens ---------- */
+@media (max-width: 575.98px) {
+    .app-main { padding-top: 1.1rem; }
+    .page-head h1 { font-size: 1.5rem; }
+    .panel-pad, .filter-bar, .panel-head, .list-foot { padding-left: 1rem; padding-right: 1rem; }
+    .shelf-row { grid-template-columns: 6.5rem 1fr 1.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+}
 
