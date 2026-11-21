@@ -14,9 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 require_valid_post('books/index.php');
 
-$id        = post_int('book_id');
-$confirmed = post_str('confirmed') === '1';
-
 try {
     $stmt = $pdo->prepare('SELECT book_id, title FROM books WHERE book_id = ?');
     $stmt->execute([$id]);
