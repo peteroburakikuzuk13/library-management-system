@@ -65,14 +65,14 @@ require_once __DIR__ . '/../includes/header.php';
                 <label for="title" class="form-label">Title</label>
                 <input type="text" class="form-control<?= invalid_class($errors, 'title') ?>" id="title" name="title"
                        value="<?= e($data['title']) ?>" maxlength="200" required>
-                <?= field_error($errors, 'title') ?>
+                <?= field_error($errors, 'Title') ?>
             </div>
             <div class="col-md-6">
                 <label for="author_id" class="form-label">Author</label>
                 <select class="form-select<?= invalid_class($errors, 'author_id') ?>" id="author_id" name="author_id" required>
                     <option value="">Choose an author</option>
                     <?php foreach ($authors as $a): ?>
-                        <option value="<?= (int) $a['author_id'] ?>"<?= (int) $data['author_id'] === (int) $a['author_id'] ? ' selected' : '' ?>><?= e($a['name']) ?></option>
+                        <option value="<?= (int) $a['author_id'] ?>"<?= (int) $data['author_id'] === (int) $a['author_id'] ? ' selected' : '' ?>><?= e($a['Name']) ?></option>
                     <?php endforeach; ?>
                 </select>
                 <?= field_error($errors, 'author_id') ?>
@@ -110,7 +110,7 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
         <div class="mt-4 d-flex gap-2">
             <button type="submit" class="btn btn-primary">Add book</button>
-            <a class="btn btn-outline-secondary" href="<?= e(base_url('books/index.php')) ?>">Cancel</a>
+            <a class="btn btn-outline-secondary" href="<?= e(base_url('books/index.php')) ?>">cancel</a>
         </div>
     </form>
 </div>
