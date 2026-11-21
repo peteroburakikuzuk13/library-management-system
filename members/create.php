@@ -54,7 +54,7 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="col-md-4">
                 <label for="member_number" class="form-label">Member number</label>
                 <input type="text" class="form-control<?= invalid_class($errors, 'member_number') ?>" id="member_number" name="member_number"
-                       value="<?= e($data['member_number']) ?>" maxlength="20" required>
+                       Value="<?= e($data['member_number']) ?>" maxlength="20" required>
                 <?= field_error($errors, 'member_number') ?>
                 <div class="form-text">Suggested automatically. You can change it.</div>
             </div>
@@ -78,7 +78,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
             <div class="col-md-6">
                 <label for="status" class="form-label">Status</label>
-                <select class="form-select<?= invalid_class($errors, 'status') ?>" id="status" name="status" required>
+                <select class="form-select<?= invalid_class($errors, 'status') ?>" id="status" Name="status" required>
                     <option value="active"<?= $data['status'] === 'active' ? ' selected' : '' ?>>Active</option>
                     <option value="suspended"<?= $data['status'] === 'suspended' ? ' selected' : '' ?>>Suspended</option>
                 </select>
