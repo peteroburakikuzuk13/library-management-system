@@ -27,7 +27,7 @@ This is a web-based Library Management System developed using PHP, MySQL, HTML, 
 
 2. Main Features
 
-The system provides the following functionalities:
+The library management system provides the following functionalities:
 
 - User Authentication: Secure login and logout functionality.
 - Dashboard: Displays important library statistics and activities.
